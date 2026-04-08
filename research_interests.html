@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+  (function(){try{var t=localStorage.getItem("theme");if(t!=="light"&&t!=="dark"&&t!=="auto")t="auto";document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","auto");}})();
+  </script>
+  <meta name="description" content="Research interests — Guanke Bao: multi-omics, cancer clinical trials, reproducible bioinformatics pipelines." />
+  <title>Research Interests — Guanke Bao</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="wrap wrap--with-sidebar">
+    <div id="site-header-root"></div>
+
+    <div class="layout-inner">
+      <div id="sidebar-root"></div>
+
+      <main id="main">
+      <section id="research-interests" aria-labelledby="research-interests-heading">
+        <h2 id="research-interests-heading">Research interests</h2>
+        <p class="lead">
+          My research interests are in the areas that connect genomics, clinical data, and translational cancer research.
+        </p>
+        <ul class="bullet-list">
+          <li>Multi-omics integration, quality control, and harmonisation (genomic, transcriptomic, metabolomic, immunopeptidomic, and clinical data).</li>
+          <li>Reproducible sequencing analysis with community workflows (e.g. Nextflow: WGS, WES, RNA-seq, scRNA-seq) on HPC and secure research platforms.</li>
+          <li>Clinical trial data systems, real-time visualisation, and FAIR-style access for interdisciplinary teams (e.g. REDCap, cBioPortal).</li>
+          <li>Gene regulation and transcriptome-scale resources; motif and target prediction from large public compendia.</li>
+          <li>Software engineering for bioinformatics: version control, CI/CD, and DevOps-minded pipelines in regulated and collaborative settings.</li>
+        </ul>
+      </section>
+    </main>
+
+    </div>
+
+    <footer class="site-footer">
+      <p class="footer-copy">© <span id="year"></span> Guanke Bao</p>
+    </footer>
+  </div>
+
+  <script src="js/theme.js" defer></script>
+  <script src="js/header.js" defer></script>
+  <script src="js/sidebar.js" defer></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

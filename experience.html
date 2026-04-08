@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+  (function(){try{var t=localStorage.getItem("theme");if(t!=="light"&&t!=="dark"&&t!=="auto")t="auto";document.documentElement.setAttribute("data-theme",t);}catch(e){document.documentElement.setAttribute("data-theme","auto");}})();
+  </script>
+  <meta name="description" content="Professional experience — Guanke Bao: Cambridge CG-TIC, Oxford Cancer, University of Edinburgh." />
+  <title>Experience — Guanke Bao</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="wrap wrap--with-sidebar">
+    <div id="site-header-root"></div>
+
+    <div class="layout-inner">
+      <div id="sidebar-root"></div>
+
+      <main id="main">
+      <section id="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+
+        <article class="role">
+          <div class="role-header">
+            <h3 class="role-title">CG-TIC Data Scientist</h3>
+            <span class="role-org">University of Cambridge</span>
+          </div>
+          <p class="role-meta">
+            Cambridge, UK · Aug 2025–present · Full-time ·
+            <a href="https://www.med.cam.ac.uk/cg-tic" rel="noopener noreferrer">Cambridge-GSK Translational Immunology Collaboration (CG-TIC)</a>
+          </p>
+          <ul class="bullet-list">
+            <li>Responsible for data cleaning, harmonisation, and preprocessing of large-scale longitudinal Electronic Health Records (EHR) data to ensure consistency and readiness for downstream analysis.</li>
+            <li>Collaborated with multidisciplinary teams to design and implement reproducible data pipelines supporting machine learning model development and validation.</li>
+          </ul>
+        </article>
+
+        <article class="role">
+          <div class="role-header">
+            <h3 class="role-title">Research Data Integration and Software Developer</h3>
+            <span class="role-org">University of Oxford</span>
+          </div>
+          <p class="role-meta">
+            Oxford, UK · June 2023–Aug 2025 · Full-time ·
+            <a href="https://www.cancer.ox.ac.uk/" rel="noopener noreferrer">Oxford Cancer</a>
+          </p>
+          <ul class="bullet-list">
+            <li>Oversee cancer clinical trials: develop and maintain REDCap and cBioPortal instances with large-scale datasets to improve data access and real-time visualisation.</li>
+            <li>Run community-standard Nextflow workflows (WGS, WES, RNA-seq, scRNA-seq) on Linux HPC; present results to interdisciplinary teams and support research publications.</li>
+            <li>Design QC pipelines for genomic, transcriptomic, metabolomic, immunopeptidomic, and clinical data, with DevOps-style practices for reliable downstream analysis.</li>
+            <li>Collaborate across functions; contribute data-driven bioinformatics input to funding proposals (including support for a £3M industrial grant).</li>
+          </ul>
+        </article>
+
+        <article class="role">
+          <div class="role-header">
+            <h3 class="role-title">Research Assistant</h3>
+            <span class="role-org">University of Edinburgh</span>
+          </div>
+          <p class="role-meta">
+            Edinburgh, UK · Jan–Aug 2022; Mar–May 2023 ·
+            Supervisor: Dr. Cei Abreu-Goodger ·
+            <a href="https://cei.bio.ed.ac.uk/wp/people/" rel="noopener noreferrer">Abreu-Goodger lab</a>
+          </p>
+          <ul class="bullet-list">
+            <li>Predicting gene-regulatory motifs from large-scale transcriptome resources.</li>
+            <li>Curated metadata from Recount3 (719k+ samples, 18k+ projects) and grouped contrasts by condition and treatment.</li>
+            <li>Processed 3′/5′ UTR sequences and predicted microRNA targets with Sylamer; validated motif enrichment against controls.</li>
+            <li>Project showcase: <a href="https://cei.bio.ed.ac.uk/msc_project/production/" rel="noopener noreferrer">cei.bio.ed.ac.uk</a>.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    </div>
+
+    <footer class="site-footer">
+      <p class="footer-copy">© <span id="year"></span> Guanke Bao</p>
+    </footer>
+  </div>
+
+  <script src="js/theme.js" defer></script>
+  <script src="js/header.js" defer></script>
+  <script src="js/sidebar.js" defer></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
