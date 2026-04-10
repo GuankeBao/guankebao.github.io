@@ -22,7 +22,7 @@
   function load() {
     var root = document.getElementById("site-header-root");
     if (!root) return;
-    var url = new URL("header.html", location.href);
+    var url = new URL("/header.html", location.origin);
     fetch(url)
       .then(function (r) {
         if (!r.ok) throw new Error(String(r.status));
@@ -42,7 +42,7 @@
       .catch(function (err) {
         console.error("header load failed", err);
         root.innerHTML =
-          '<p class="site-header-fallback">Navigation could not load. <a href="index.html">Home</a></p>';
+          '<p class="site-header-fallback">Navigation could not load. <a href="/index.html">Home</a></p>';
       });
   }
 

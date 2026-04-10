@@ -2,7 +2,7 @@
   function load() {
     var root = document.getElementById("sidebar-root");
     if (!root) return;
-    var url = new URL("sidebar.html", location.href);
+    var url = new URL("/sidebar.html", location.origin);
     fetch(url)
       .then(function (r) {
         if (!r.ok) throw new Error(String(r.status));
@@ -18,7 +18,7 @@
       .catch(function (err) {
         console.error("sidebar load failed", err);
         root.innerHTML =
-          '<p class="sidebar-fallback"><a href="index.html">Home</a></p>';
+          '<p class="sidebar-fallback"><a href="/index.html">Home</a></p>';
       });
   }
 
